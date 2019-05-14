@@ -1,0 +1,21 @@
+Package: nesage
+Type: Package
+Title: Negative-binomial sparse additive generative model for sequencing data
+Version: 0.6.2
+Authors@R: person("Koji", "Iwayama", email = "fieldtranscriptome@gmail.com", 
+              role = c("cre", "aut"))
+Maintainer: Koji Iwayama <fieldtranscriptome@gmail.com>
+Description: Provides functionality for inference of the topic model for overdispersed
+    count data such like RNA-Seq data and prediction based on the inferred model. 
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.2.2), BH
+Imports: Rcpp (>= 0.11.2), RcppParallel, BH
+License: MPL (>= 2) | file LICENSE
+LinkingTo: Rcpp, RcppArmadillo, RcppParallel, BH
+SystemRequirements: C++11, GNU make
+NeedsCompilation: yes
+RoxygenNote: 6.1.1
+Packaged: 2018-01-26 08:47:54 UTC; Koji
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr

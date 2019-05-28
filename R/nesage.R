@@ -3,7 +3,9 @@
 #' Provides functionality for inference of topics, which are latent structure of RNA-Seq data,
 #' and estimation of gene expression.
 #' @docType package
-#' @useDynLib nesage
+#' @useDynLib nesage, .registration = TRUE
 #' @importFrom Rcpp evalCpp
+#' @importFrom RcppParallel RcppParallelLibs
 #' @exportPattern "^[[:alpha:]]+"
+"_PACKAGE"
 NULL

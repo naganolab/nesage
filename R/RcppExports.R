@@ -5,10 +5,10 @@
 NULL
 
 nesage <- function(dataMat, library, updateAlpha, modelList, iter) {
-    .Call('_nesage_nesage', PACKAGE = 'nesage', dataMat, library, updateAlpha, modelList, iter)
+    .Call(`_nesage_nesage`, dataMat, library, updateAlpha, modelList, iter)
 }
 
 estimateExpression <- function(cnt, library, modelList) {
-    .Call('_nesage_estimateExpression', PACKAGE = 'nesage', cnt, library, modelList)
+    .Call(`_nesage_estimateExpression`, cnt, library, modelList)
 }
 
